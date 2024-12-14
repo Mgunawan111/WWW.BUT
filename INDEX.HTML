@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    h1 {
+      font-size: 3em;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .message {
+      font-size: 1.5em;
+      margin-top: 20px;
+      opacity: 0;
+      animation: slideIn 2s forwards;
+      animation-delay: 2s;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>Selamat Ulang Tahun!</h1>
+    <p class="message">Semoga hari Anda penuh kebahagiaan dan keberuntungan. Nikmati setiap momennya!</p>
+  </div>
+
+</body>
+</html>
